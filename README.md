@@ -34,6 +34,23 @@
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+## Fix Intel Screen Tearing
+  Fix the screen tearing that occurs with integrated graphics
+
+    sudo mkdir /etc/X11/xorg.conf.d
+    sudo gedit /etc/X11/xorg.conf.d/20-intel-graphics.conf
+
+  Within that file place the following
+
+    Section "Device"
+      Identifier  "Intel Graphics"
+      Driver      "intel"
+      Option      "TripleBuffer" "true"
+      Option      "TearFree"     "true"
+      Option      "DRI"          "false"
+    EndSection
+
+  Then reboot
 
 ## Install Packages
 
