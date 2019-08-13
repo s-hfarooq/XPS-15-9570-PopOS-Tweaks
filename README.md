@@ -41,6 +41,23 @@
 
     sudo apt-get install tlp powertop gnome-tweak-tool gnome-shell-extensions vim g++ xfce4-terminal exfat-fuse exfat-utils
 
+  Install [`comfortable-swipe`](https://github.com/Hikari9/comfortable-swipe) to enable trackpad gestures
+
+    sudo apt-get install git libinput-tools libxdo-dev g++
+    git clone https://github.com/Hikari9/comfortable-swipe.git --depth 1
+    cd comfortable-swipe
+    bash install
+    sudo gpasswd -a $USER $(ls -l /dev/input/event* | awk '{print $4}' | head --line=1)
+
+  Restart then run
+
+    comfortable-swipe start
+
+  Configure settings for comfortable-swipe
+
+    gedit $(comfortable-swipe config)
+    comfortable-swipe restart
+
 ## Edit TLP Settings
   Edit the TLP settings to further reduce power drain. Run
 
