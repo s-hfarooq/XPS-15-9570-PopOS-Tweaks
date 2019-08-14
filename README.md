@@ -1,4 +1,4 @@
-# XPS-15-9570-Ubuntu-Tweaks
+# XPS-15-9570-PopOS-Tweaks
 
 ## Install Pop!_OS
   Create a Pop!_OS installation media by downloading the ISO from [System76's website](https://system76.com/pop) (NVIDIA variant since this laptop has a 1050Ti Max-Q). Once downloaded, plug in a USB stick and use a tool like [Rufus](https://rufus.ie/) or [Etcher](https://www.balena.io/etcher/) to create the installation media.
