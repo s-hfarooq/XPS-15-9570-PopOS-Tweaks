@@ -52,6 +52,11 @@
 
   Then reboot
 
+## Fix Dual Boot Time Issue
+  When dual booting Ubuntu and Windows, an issue occurs where the time in Windows is incorrect after rebooting from Ubuntu. To fix this , make Ubuntu use local time
+
+    timedatectl set-local-rtc 1 --adjust-system-clock
+
 ## Install Packages
 
   Install tlp, powertop, gnome-tweak-tool, gnome-shell-extensions, vim, g++, xfce4-terminal, exfat-fuse, and exfat-utils. Do this by running
