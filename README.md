@@ -1,7 +1,7 @@
 # XPS-15-9570-PopOS-Tweaks
 
 ## Install Pop!_OS
-  Create a Pop!_OS installation media by downloading the ISO from [System76's website](https://system76.com/pop) (NVIDIA variant since this laptop has a 1050Ti Max-Q). Once downloaded, plug in a USB stick and use a tool like [Rufus](https://rufus.ie/) or [Etcher](https://www.balena.io/etcher/) to create the installation media.
+  Create a Pop!_OS installation media by downloading the ISO from [System76's website](https://system76.com/pop) (NVIDIA variant since this laptop has a 1050Ti Max-Q). Use the 19.04 version - I've experienced issues with graphics switching with 18.04lts where I wasn't able to enable the NVIDIA card after rebooting a couple times. Once downloaded, plug in a USB stick and use a tool like [Rufus](https://rufus.ie/) or [Etcher](https://www.balena.io/etcher/) to create the installation media.
 
   Restart the system and press F12 on boot to get into the boot menu. Boot in UEFI mode from the installer you just created. From there, follow on screen instructions to install Pop!_OS.
 
@@ -26,7 +26,7 @@
 
   to see if you can swich over to `deep` sleep to fix the problem. If everything works, run the following line:
 
-    sudo -H gedit /etc/default/grub.
+    sudo -H gedit /etc/default/grub
 
   and replace `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"` with `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash mem_sleep_default=deep"` to make the switch permanent.
 
