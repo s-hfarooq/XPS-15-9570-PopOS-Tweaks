@@ -8,16 +8,16 @@
 ## Update and Fix Boot
   Once the OS is installed, update the system:
 
-      sudo apt-get update
-      sudo apt-get upgrade
-      sudo apt-get dist-upgrade
+      sudo apt update
+      sudo apt upgrade
+      sudo apt dist-upgrade
 
 
   Install Boot Repair so that grub is properly installed and you can boot into Windows.
 
     sudo add-apt-repository ppa:yannubuntu/boot-repair
-    sudo apt-get update
-    sudo apt-get install -y boot-repair && boot-repair
+    sudo apt update
+    sudo apt install -y boot-repair && boot-repair
 
 ## Fix Sleep Mode
   By default, the XPS 15 uses `s2idle` sleep mode which drains battery pretty quickly. `deep` sleep reduces the power draw in sleep mode without any noticeable drawbacks. Run:
