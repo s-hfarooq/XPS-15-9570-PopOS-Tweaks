@@ -65,7 +65,7 @@
 
   Install [`comfortable-swipe`](https://github.com/Hikari9/comfortable-swipe) to enable trackpad gestures
 
-    sudo apt-get install git libinput-tools libxdo-dev g++
+    sudo apt install git libinput-tools libxdo-dev g++
     git clone https://github.com/Hikari9/comfortable-swipe.git --depth 1
     cd comfortable-swipe
     bash install
