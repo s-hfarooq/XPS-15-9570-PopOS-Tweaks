@@ -61,7 +61,7 @@
 
   Install tlp, powertop, gnome-tweak-tool, gnome-shell-extensions, vim, g++, xfce4-terminal, exfat-fuse, and exfat-utils. Do this by running
 
-    sudo apt-get install tlp powertop gnome-tweak-tool gnome-shell-extensions vim g++ xfce4-terminal exfat-fuse exfat-utils
+    sudo apt install tlp powertop gnome-tweak-tool gnome-shell-extensions vim g++ xfce4-terminal exfat-fuse exfat-utils
 
   Install [`comfortable-swipe`](https://github.com/Hikari9/comfortable-swipe) to enable trackpad gestures
 
@@ -142,8 +142,8 @@
   To install Lollypop:
 
     sudo apt-add-repository ppa:gnumdk/lollypop
-    sudo apt-get update
-    sudo apt-get install lollypop
+    sudo apt update
+    sudo apt install lollypop
 
   Install these add-ons in Atom
   * atom-material-ui
