@@ -1,7 +1,7 @@
 # XPS-15-9570-PopOS-Tweaks
 
 ## Install Pop!_OS
-  Create a Pop!_OS installation media by downloading the ISO from [System76's website](https://system76.com/pop) (NVIDIA variant since this laptop has a 1050Ti Max-Q). Use the 19.04 version - I've experienced issues with graphics switching with 18.04lts where I wasn't able to enable the NVIDIA card after rebooting a couple times. Once downloaded, plug in a USB stick and use a tool like [Rufus](https://rufus.ie/) or [Etcher](https://www.balena.io/etcher/) to create the installation media.
+  Create a Pop!_OS installation media by downloading the ISO from [System76's website](https://system76.com/pop) (NVIDIA variant since this laptop has a 1050Ti Max-Q). Use the 19.10 version. Once downloaded, plug in a USB stick and use a tool like [Rufus](https://rufus.ie/) or [Etcher](https://www.balena.io/etcher/) to create the installation media.
 
   Restart the system and press F12 on boot to get into the boot menu. Boot in UEFI mode from the installer you just created. From there, follow on screen instructions to install Pop!_OS.
 
@@ -35,6 +35,8 @@
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Fix Intel Screen Tearing
+  NOTE: This doesn't seem to be necessary with 19.10, but I'll keep it here just in case.
+  
   Fix the screen tearing that occurs with integrated graphics
 
     sudo mkdir /etc/X11/xorg.conf.d
@@ -63,7 +65,7 @@
 
     sudo apt install tlp powertop gnome-tweak-tool gnome-shell-extensions vim g++ xfce4-terminal exfat-fuse exfat-utils
 
-  Install [`comfortable-swipe`](https://github.com/Hikari9/comfortable-swipe) to enable trackpad gestures
+  Install [`comfortable-swipe`](https://github.com/Hikari9/comfortable-swipe) to enable trackpad gestures. I personally never really used it, instead opting for keyboard shortcuts.
 
     sudo apt install git libinput-tools libxdo-dev g++
     git clone https://github.com/Hikari9/comfortable-swipe.git --depth 1
